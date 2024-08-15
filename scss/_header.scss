@@ -1,0 +1,86 @@
+#header_area {
+    // Top Header Area Style
+    .top_header_area {
+        position: relative;
+        background: $pcolor;
+        padding: $paddingsm;
+        .mobile_bars {
+            display: none;
+        }
+        p {
+            font: {
+                size: 14px;
+                weight: $fontwmd;
+            }
+            color: $whitecolor;
+            margin: 8px 0 0;
+            i {
+                display: inline-block;
+                margin-right: 8px;
+            }
+        }
+    }
+    // Main Header Area Style
+    .main_header {
+        background: $whitecolor;
+        padding: 25px 0;
+        .logo_area {
+            flex-basis: 30%;
+        }
+        .main_menu {
+            flex-basis: 70%;
+            margin-top: 10px;
+            ul {
+                text-align: right;
+                display: flex;
+                justify-content: end;
+                li {
+                    margin-left: 25px;
+                    a {
+                        color: $dkcolor;
+                        font: {
+                            size: 16px;
+                            weight: $fontwmd
+                        }
+                        &:hover {
+                            color: $pcolor;
+                        }
+                    }
+                }
+            }
+        }
+        // Resposive Style
+        @media only screen and (min-width: $small) and (max-width: $medium) {
+            width: 96%;
+            .main_menu {
+                background: $pcolor;
+                width: 96%;
+                position: absolute;
+                left: -999px;
+                ul {
+                    flex-direction: column;
+                    text-align: left;
+                    li {
+                        margin-left: 0;
+                        margin-bottom: 5px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        a {
+                            color: $whitecolor;
+                            display: block;
+                            padding: 10px 15px;
+                            &:hover {
+                                background: $dkcolor;
+                                color: $whitecolor;
+                            }
+                        }
+                    }
+                }
+                &.open {
+                    left: 10px;
+                }
+            }
+        }
+    }
+}

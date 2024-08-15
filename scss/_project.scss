@@ -1,0 +1,62 @@
+#project_area {
+    background: $whitecolor;
+    .child_project {
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .project_info {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            top: 0;
+            left: -999px;
+            z-index: 99;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: 0.5s;
+            h3 {
+                position: relative;
+                z-index: 999;
+                color: $whitecolor;
+            }
+            p {
+                position: relative;
+                z-index: 999;
+            }
+            &::after {
+                background: $dkcolor;
+                width: 0%;
+                height: 100%;
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0.5;
+                transition: 0.5s;
+            }
+            &:hover::after {
+                width: 100%;
+            }
+        }
+        &:hover .project_info {
+            left: 0;
+        }
+    }
+    .project_x {
+        grid-column: auto / span 2;
+    }
+    .project_y {
+        grid-row: auto / span 2;
+    }
+    .project_xy {
+        grid-column: auto / span 2;
+        grid-row: auto / span 2;
+    }
+}

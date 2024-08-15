@@ -1,0 +1,22 @@
+#footer_area {
+    background: $dkcolor;
+    text-align: center;
+    position: relative;
+    .logo_area {
+        width: 200px;
+        margin: 0 auto 20px;
+    }
+    .socail_area ul {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .copyright {
+        color: $whitecolor;
+        p {
+            font-size: 14px;
+            span {
+                color: red;
+            }
+        }
+    }
+}

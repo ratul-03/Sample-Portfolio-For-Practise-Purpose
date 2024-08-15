@@ -1,0 +1,163 @@
+// Color
+$darkBgColor: #1f1f1f;
+$darksColor: #262626;
+
+body.dark {
+    .socail_area {
+        ul {
+            li {
+                a {
+                    &:hover {
+                        background: $whitecolor;
+                        color: $dkcolor;
+                    }
+                }
+            }
+            i.fa-solid {
+                display: block;
+                background: $scolor;
+                width: 40px;
+                height: 40px;
+                font-size: 15px;
+                color: $dkcolor;
+                text-align: center;
+                border-radius: 30px;
+                padding-top: 12px;
+                transition: 0.5s;
+                cursor: pointer;
+                i {
+                    margin: 0;
+                }
+                &:hover {
+                    background: $whitecolor;
+                    color: $dkcolor;
+                } 
+            }
+        }
+    }
+    // Header Area
+    #header_area {
+        .top_header_area {
+            background: $darkBgColor;
+        }
+        .main_header {
+            background: $darksColor;
+            .main_menu {
+                ul {
+                    li {
+                        a {
+                            color: $scolor;
+                            &:hover {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Hero Area
+    #hero_area {
+        background: $darkBgColor;
+        .admin_info {
+            h2, h5, p {
+                color: $whitecolor;
+            }
+        }
+    }
+
+    // About Area
+    #about_area {
+        background: $darksColor;
+        .container.text-center {
+            color: $whitecolor;
+        }
+        .about_numbers {
+            .child_about {
+                background: $darkBgColor;
+                h4, h6 {
+                    color: $scolor;
+                }
+            }
+        }
+        .about_info {
+            color: $whitecolor;
+            h3, h6 {
+                color: $whitecolor;
+            }
+        }
+    }
+
+    // Service Area
+    #service_area {
+        background: $darkBgColor;
+        .container.text-center {
+            color: $whitecolor;
+        }
+        .child_service {
+            background: $darksColor;
+            box-shadow: none;
+            h4 {
+                color: $scolor;
+            }
+            p {
+                color: $whitecolor;
+            }
+        }
+    }
+
+    // Projects Area
+    #project_area {
+        background: $darksColor;
+        .container.text-center {
+            color: $whitecolor;
+        }
+    }
+
+    // Blog Area
+    #blog_area {
+        background: $darkBgColor;
+        .container.text-center {
+            color: $whitecolor;
+        }
+        .child_blog {
+            .blog_info {
+                background: $darksColor;
+                h4 a, p{
+                    color: $whitecolor;
+                }
+            }
+        }
+    }
+
+    // Contact Area
+    #contact_area {
+        background: $darksColor;
+        .container.text-center {
+            color: $whitecolor;
+        }
+        .contact_info {
+            div {
+                background: $darkBgColor;
+                p {
+                    color: $whitecolor;
+                }
+            }
+        }
+        .contact_form {
+            input, textarea {
+                background: $darksColor;
+                color: $whitecolor;
+            }
+            input[type="submit"] {
+                background: $pcolor;
+                cursor: pointer;
+            }
+        }
+    }
+
+    // Footer Area
+    #footer_area {
+        background: $darkBgColor;
+    }
+}

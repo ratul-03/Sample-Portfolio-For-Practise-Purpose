@@ -1,0 +1,144 @@
+// Font weight varriables
+$fontwsm: 400;
+$fontwmd: 600;
+$fontwxl: 900;
+
+// Color
+$pcolor: #eb7966;
+$scolor: #f4c9c2;
+$bgcolor: #f9ebea;
+$whitecolor: #ffffff;
+$dkcolor: #11184f;
+
+body, p {
+    font: {
+        size: 16px;
+        weight: $fontwsm;
+    };
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $fontwxl;
+    margin: 0 0 15px;
+    line-height: 1.2em;
+}
+
+// Main Width
+$small: 200px;
+$medium: 767px;
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    // Resposive Style
+    @media only screen and (min-width: $small) and (max-width: $medium) {
+        width: 96%;
+    }
+}
+
+// Paddings
+$paddingsm: 10px 0;
+.paddingxl {
+    padding: 60px 0;
+    // Resposive Style
+    @media only screen and (min-width: $small) and (max-width: $medium) {
+        padding: 25px 0;
+    }
+}
+
+// Margins
+.m-top {
+    margin-top: 45px;
+    // Resposive Style
+    @media only screen and (min-width: $small) and (max-width: $medium) {
+        margin-top: 25px;
+    }
+}
+
+// Social Area Style
+.socail_area {
+    ul {
+        text-align: right;
+        li {
+            margin-left: 15px;
+        }
+        a {
+            display: block;
+            background: $scolor;
+            width: 40px;
+            height: 40px;
+            font-size: 15px;
+            color: $dkcolor;
+            text-align: center;
+            border-radius: 30px;
+            padding-top: 8px;
+            transition: 0.5s;
+            i {
+                margin: 0;
+            }
+            &:hover {
+                background: $dkcolor;
+                color: $whitecolor;
+            }
+        }
+        i.fa-solid {
+            display: block;
+            background: $scolor;
+            width: 40px;
+            height: 40px;
+            font-size: 15px;
+            color: $dkcolor;
+            text-align: center;
+            border-radius: 30px;
+            padding-top: 12px;
+            transition: 0.5s;
+            cursor: pointer;
+            i {
+                margin: 0;
+            }
+            &:hover {
+                background: $dkcolor;
+                color: $whitecolor;
+            } 
+        }
+    }
+}
+
+// Call to Action Button Style
+.btn-cta {
+    background: $pcolor;
+    color: $whitecolor;
+    padding: 12px 25px;
+    font-weight: $fontwmd;
+    border-radius: 5px;
+    margin-top: 5px;
+    &:hover {
+        background: $dkcolor;
+    }
+}
+
+// Title and Sub-title
+.title {
+    font-size: 60px;
+    line-height: 1em;
+    margin-bottom: 10px;
+    // Resposive Style
+    @media only screen and (min-width: $small) and (max-width: $medium) {
+        font-size: 25px;
+    }
+}
+
+.sub-title {
+    font: {
+        size: 25px;
+        weight: $fontwmd;
+    }
+    margin-bottom: 0;
+    // Resposive Style
+    @media only screen and (min-width: $small) and (max-width: $medium) {
+        font-size: 15px;
+    }
+}

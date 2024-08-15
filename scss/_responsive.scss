@@ -1,0 +1,181 @@
+// Resposive Style
+// Laptop Screen
+@media only screen and (min-width: 768pxpx) and (max-width: 1410px) {
+    .container {
+        width: 1140px;
+    }
+    #project_area {
+        .project_x {
+            grid-column: auto / span 1;
+        }
+        .project_y {
+            grid-row: auto / span 1;
+        }
+        .project_xy {
+            grid-column: auto / span 1;
+            grid-row: auto / span 1;
+        }
+    }
+    #contact_area {
+        .contact_info {
+            div {
+                padding: 40px 25px;
+                display: flex;
+            }
+        }     
+    }
+}
+
+// Tablet Screen
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 96%;
+    }
+    #contact_area .contact_info div {
+        padding: 20px 15px;
+    }
+}
+
+// PC Scrren
+@media only screen and (min-width: $small) and (max-width: $medium) {
+    // Header Area Style
+    #header_area {
+        .inner {
+            display: block;
+        }
+        // Top Header Area Style
+        .top_header_area {
+            .address, .phone_number, .email_address {
+                display: none;
+            }
+            // Navigation Menu Style
+            .mobile_bars {
+                display: block;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                i {
+                    color: $whitecolor;
+                    cursor: pointer;
+                    font-size: 25px;
+                }
+            }
+            .socail_area {
+                ul {
+                    text-align: center;
+                }
+            }
+        }
+        // Main Menu Style
+        .main_header {
+            .logo_area {
+                width: 200px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    // Hero Area Style
+    #hero_area {
+        .inner {
+            flex-direction: column;
+        }
+        .admin_info {
+            flex-basis: 100%;
+            padding: 20px;
+            order: 2;
+        }
+        .admin_image {
+            order: 1;
+            flex-basis: 100%;
+        }
+    }
+
+    // About Area Style
+    #about_area {
+        .inner {
+            flex-direction: column;
+        }
+        .about_numbers {
+            flex-basis: 100%;
+            .child_about {
+                h4 {
+                    font-size: 25px;
+                }
+                h6 {
+                    font-size: 14px;
+                }
+            }
+        }
+        .about_info {
+            flex-basis: 100%;
+            padding: 20px;
+            h3 {
+                font-size: 25px;
+            }
+            h6 {
+                font-size: 15px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    // Service Area Style
+    #service_area {
+        .inner {
+            flex-direction: column;
+        }
+        .child_service {
+            margin-bottom: 25px;
+            padding: 25px;
+            i {
+                margin-bottom: 10px;
+            }
+            h4 {
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    // Project Area Style
+    #project_area {
+        .inner-grid {
+            display: block;
+        }
+        .child_project {
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+    }
+
+    // Blog Area Style
+    #blog_area {
+        .inner {
+            flex-direction: column;
+        }
+        .child_blog {
+            margin-bottom: 25px;
+        }
+    }
+
+    // Contact Area Style
+    #contact_area {
+        .inner, .contact_info {
+            flex-direction: column;
+        }
+        .contact_info {
+            div {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            iframe {
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

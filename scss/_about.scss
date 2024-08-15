@@ -1,0 +1,60 @@
+#about_area {
+    // About Number Area Style
+    .about_numbers {
+        flex-basis: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .child_about {
+            flex-basis: 48%;
+            text-align: center;
+            background: $bgcolor;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            h4 {
+                color: $dkcolor;
+                font: {
+                    size: 45px;
+                    weight: $fontwxl;
+                }
+                margin: 0;
+            }
+            h6 {
+                color: $dkcolor;
+                font: {
+                    size: 16px;
+                    weight: $fontwmd;
+                }
+                line-height: 1em;
+                margin: 0;
+            }
+        }
+    }
+    // About Info Style
+    .about_info {
+        flex-basis: 46%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        h3 {
+            color: $dkcolor;
+            font: {
+                size: 35px;
+                weight: $fontwxl;
+            }
+            line-height: 1em;
+            text-transform: uppercase;
+        }
+        h6 {
+            color: $dkcolor;
+            margin-bottom: 5px;
+            font: {
+                size: 20px;
+                weight: $fontwxl;
+            }
+            line-height: 1em;
+            text-transform: uppercase;
+        }
+    }
+}

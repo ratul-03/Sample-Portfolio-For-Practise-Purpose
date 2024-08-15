@@ -1,0 +1,19 @@
+#blog_area {
+    background: $bgcolor;
+    .child_blog {
+        flex-basis: 33%;
+        transition: 0.5s;
+        img {
+            display: block;
+        }
+        .blog_info {
+            background: $whitecolor;
+            padding: 25px;
+            h4 {
+                color: $dkcolor;
+                font-size: 25px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
